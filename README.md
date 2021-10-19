@@ -1,4 +1,4 @@
-# Tasktracker
+# Tasktracker - credits : tutorial by [Traversy Media](https://www.youtube.com/watch?v=3dHNOWTI7H8&t=8s&ab_channel=TraversyMedia)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.
 
