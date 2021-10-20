@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './componets/header/header.component';
 import { ButtonComponent } from './componets/button/button.component';
 import { TasksComponent } from './componets/tasks/tasks.component';
 import { TaskItemComponent } from './componets/task-item/task-item.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AddTaskComponent } from './componets/add-task/add-task.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +16,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HeaderComponent,
     ButtonComponent,
     TasksComponent,
-    TaskItemComponent
+    TaskItemComponent,
+    AddTaskComponent,
   ],
-  imports: [
-    BrowserModule,
-    FontAwesomeModule
-  ],
+  imports: [BrowserModule, FontAwesomeModule, HttpClientModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
